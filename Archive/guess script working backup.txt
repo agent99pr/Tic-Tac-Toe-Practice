@@ -1,0 +1,88 @@
+<script>
+  var guess = prompt("Hi. I'm thinking of a number from 1 to 10, see if you can guess my number.");
+  if(guess=3)
+{console.log ("You guessed my number!");}
+else
+{console.log("You did not guess my number, try again.");
+prompt("Guess my number, enter a number from 1 to 10");
+}
+<script>
+
+
+top from bill:
+ <script>
+      // here is a comment
+      function start() {
+        document.getElementById("output").innerHTML = "HELLO";
+      }
+      function pressButton() {
+        document.getElementById("output").innerHTML += "<br>" + document.getElementById("value1").value;
+      }
+    </script>
+
+<script>
+  var guess = prompt("Hi. I'm thinking of a number from 1 to 10, see if you can guess my number.");
+  if(guess===3)
+{console.log ("You guessed my number!");}
+else
+{console.log("You did not guess my number, try again.");
+guess;}
+   </script>
+
+WORKS EXCEPT FOR AGAIN
+<html>
+  <head>
+   
+  </head>
+  
+  <script>
+  var guess=prompt("Hi. I'm thinking of a number from 1 to 10, see if you can guess my number.");
+  if(guess==3)
+{document.write ("You guessed my number!");}
+else
+{document.write("You did not guess my number, try again.");
+guess;}
+
+ </script>
+  
+  </body>
+</html>
+
+Doesn't work While Else
+<html>
+  <head>
+   
+  </head>
+  
+  <script>
+  
+  var guess=prompt("Hi. I'm thinking of a number from 1 to 10, see if you can guess my number.");
+while
+  (guess!=3)
+  {document.write ("You did not guess my number, try again.");}
+else
+{document.write ("You guessed my number!");}
+
+ </script>
+  
+  </body>
+</html>
+
+WORKS!!!
+<html>
+  <head>
+   
+  </head>
+  <body>
+  <script>
+  var guess=prompt("Hi. I'm thinking of a number from 1 to 10, see if you can guess my number.");
+  while(guess!=3)
+{alert("You did not guess my number, try again.");
+ var guess=prompt("Hi. I'm thinking of a number from 1 to 10, see if you can guess my number.");}
+{alert ("You guessed my number!");}
+
+ </script>
+  
+  </body>
+</html>
+
