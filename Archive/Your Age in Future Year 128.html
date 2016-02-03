@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <script>	
+      var userage = prompt("How old are you?");
+      while(isNaN(userage))
+      {var userage=prompt("Please enter a number in digits. How old are you?");}
+
+      var futureyear = prompt("Pick a future year.");
+      while(isNaN(futureyear))
+      {var futureyear=prompt("Please pick a future year in digits, such as 2020.");}
+ 
+      var today = new Date();
+      var currentyear = today.getFullYear();
+      function getFullYear() {return getFullYear();};
+
+      var yeardif=(futureyear-currentyear)
+
+      var futureage=(parseInt(userage) + parseInt(yeardif))
+
+      document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
+
+    </script>
+  </body>
+</html>
+

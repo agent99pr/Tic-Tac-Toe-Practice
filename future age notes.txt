@@ -1,0 +1,56 @@
+
+127
+document.write("<span style=\"color:green;\">(I see you have been here " + visits + " times.)<\/span>");
+document.write(<style> td { color: blue; }{font-size em6;} </style"Believe it or not, you will be" + " " + futureage + " " + "in" + " " + futureyear);
+
+{return "Hi, I am" + " " + name;}
+
+doesn't work
+
+
+var sum = Number(document.getElementById("b4_f2_"+i).value) + Number(document.getElementById("b4_f3_"+i).value) + 
+
+
+
+var yeardif=parseInt((futureyear)-(currentyear);
+alert(yeardif);
+var futureage=parseInt((userage)+(yeardif));
+alert(futureage);
+
+
+function yeardif() {
+yeardif=futureyear - userage;
+return(yeardif);}
+function futureage()  {userage + yeardif};
+alert("You will be futureage in futureyear");
+
+
+
+var futureyear = prompt("Pick a future year");
+
+function validatefutureyear()
+
+ 
+  if (isNaN(futureyear)) 
+  {
+    alert("Must input numbers");
+    return false;
+  }
+
+if (isNaN(userage))
+{
+	alert(You wrote'"' + userage + '". Please write your age as a number.')
+
+
+{alert("That is not my number, try again.");
+}
+var futureyear = prompt("Pick a future year");
+if (isNaN(futureyear))
+{
+	alert(You wrote'"' + futureyear + '". Please enter a 4-digit year.')
+}
+
+
+{alert("Please enter number");
+
+{alert("Please enter a number, try again.");

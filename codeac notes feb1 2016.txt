@@ -1,0 +1,132 @@
+// Write your function below. 
+// Don't forget to call your function!
+var numHours;
+function sleepCheck(numHours) {if(numHours>==8) {console.log("You're getting plenty of sleep! Maybe even too much!");}
+else { return(Get some more shuteye.");};}
+(sleepCheck(10));
+sleepcheck(5);
+sleepcheck(8);
+
+
+// Write your function below. 
+// Don't forget to call your function!
+var sleepCheck = function(numHours)
+{if(numHours>==8) {console.log("You're getting plenty of sleep! Maybe even too much!");}
+else { return(Get some more shuteye.");}
+(sleepCheck(10));
+(sleepcheck(5));
+(sleepcheck(8));
+
+
+
+var sleepCheck = function(numHours) {if numHours>==8 return "enough sleep";}
+
+else { return "not enough";}};
+
+
+/*var userChoice = prompt("Do you choose rock, paper or scissors?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+	computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "paper";
+} else {
+	computerChoice = "scissors";
+} console.log("Computer: " + computerChoice);*/
+
+var compare = function(choice1,choice2) { if (choice1===choice2) {
+    return "The result is a tie!";
+    }
+else if (choice1 === "rock") {
+    if(choice2==="scissors") { 
+        return "rock wins";
+        }
+else {
+    return "paper wins";
+}
+}
+
+// Example of a for loop:
+
+for (var counter = 1; counter < 11; counter++) {
+	console.log(counter);
+}
+
+for (var i = 0; i < 36; i++) {
+	console.log(i);
+}
+
+// Edit this for loop!
+
+for (var i = 5; i < 51; i+=5) {
+	console.log(i);
+}
+
+// Write your very own for loop!
+
+for (var i = 100; i >0; i-=5){console.log (i);}
+
+Arrays
+// You are now declaring an array.
+// Arrays are an awesome data structure!
+var junk = ["table", "chair", 2,4];
+console.log(junk);
+
+// Practice array!
+print 4th item. count starts at zero
+var junkData = ["Eddie Murphy", 49, "peanuts", 31];
+console.log(junkData[3]);
+
+print cities in array
+// Let's print out every element of an array using a for loop
+
+var cities = ["Melbourne", "Amman", "Helsinki", "NYC","Haifa","LA",];
+
+for (var i = 0; i < cities.length; i++) {
+    console.log("I would like to visit " + cities[i]);
+}
+
+// Click on "Stuck? Get a hint!" if you get stuck!
+
+var names = ["bill","shirley","gili","jon","nadine",];
+for (var i = 0; i < names.length;i++)
+{console.log("I know someone called " + names [i]);}
+
+
+/*jshint multistr:true */
+
+text = "Blah blah blah blah blah blah Eric \
+blah blah blah Eric blah blah Eric blah blah \
+blah blah blah blah blah Eric";
+
+var myName = "Eric";
+var hits = [];
+
+// Look for "E" in the text
+for(var i = 0; i < text.length; i++) {
+	if (text[i] === "E") {
+		// If we find it, add characters up to
+		// the length of my name to the array
+		for(var j = i; j < (myName.length + i); j++) {
+			hits.push(text[j]);
+		}
+	}
+}
+
+if (hits.length === 0) {
+	console.log("Your name wasn't found!");
+} else {
+	console.log(hits);
+}
+
+
+
+
+
+
+
+
+
+
+
+
