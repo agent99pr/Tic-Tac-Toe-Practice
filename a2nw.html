@@ -2,9 +2,7 @@
   <head>
     <script>
       // here is a comment
-      function start() {
-        document.getElementById("output").innerHTML = "HELLO";
-      }
+     
       function pressButton() {
         document.getElementById("output").innerHTML += "<br>" + document.getElementById("value1").value;
       }
@@ -12,9 +10,11 @@
   </head>
  
   <body onload="start()">
+  
     <input id="value1"><br>
 	
     <button onclick="pressButton()">Calculate</button>
     <div id="output"></div>
   </body>
 </html>
+

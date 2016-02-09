@@ -1,25 +1,68 @@
 <html>
   <body>
-    <script>	
-      var userage = prompt("How old are you?");
-      while(isNaN(userage))
-      {var userage=prompt("Please enter a number in digits. How old are you?");}
+  
+<!-- ask user for their current age -->
+  
+  <p>How old are you?</p>
+  
+  <input id="userage">
+  
+  <button type="button" onclick="valage()">Submit Age</button>
 
-      var futureyear = prompt("Pick a future year.");
-      while(isNaN(futureyear))
-      {var futureyear=prompt("Please pick a future year in digits, such as 2020.");}
- 
-      var today = new Date();
-      var currentyear = today.getFullYear();
-      function getFullYear() {return getFullYear();};
+<p id="checkage"></p>
 
-      var yeardif=(futureyear-currentyear)
 
-      var futureage=(parseInt(userage) + parseInt(yeardif))
+<!-- ask user for future year -->
+ <p>Pick a year</p>
+<input id="futureyear">
+  
+  <button type="button" onclick="valage()">Submit Year</button>
 
-      document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
+<p id="checkyear"></p>
+  
+    <!-- from 3schools -->
+	
+	<script>
+function valage() {
+    var x, text2;
 
-    </script>
+    // Get the value of the input field with id="userage"
+	
+    x = document.getElementById("userage").value;
+
+    // If x is Not a Number or less than one or greater than 120
+    if (isNaN(x) || x < 1 || x > 120) {
+        text = "Please enter your actual age";
+    } else {
+        text = "Thank you";
+    }
+    document.getElementById("checkage").innerHTML = text2;
+}
+
+function valyear() {
+    var y, text;
+
+    // Get the value of the input field with id="futureyear"
+   y = document.getElementById("futureyear").value;
+
+    // If y is Not a Number or less than one or greater than 120
+    if (isNaN(y) || y < 1 || x > 9999) {
+        text = "not a year";
+    } else {
+        text = "Thank you year";
+    }
+    document.getElementById("futureyear").innerHTML = text;
+}
+
+
+
+
+
+
+
+</script>
+
+
+	
   </body>
 </html>
-
