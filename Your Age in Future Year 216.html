@@ -16,7 +16,7 @@
  <p>Pick a year</p>
 <input id="futureyear">
   
-  <button type="button" onclick="valage()">Submit Year</button>
+  <button type="button" onclick="valyear()">Submit Year</button>
 
 <p id="checkyear"></p>
   
@@ -24,7 +24,7 @@
 	
 	<script>
 function valage() {
-    var x, text2;
+    var x, text1;
 
     // Get the value of the input field with id="userage"
 	
@@ -32,26 +32,26 @@ function valage() {
 
     // If x is Not a Number or less than one or greater than 120
     if (isNaN(x) || x < 1 || x > 120) {
-        text = "Please enter your actual age";
+        text1 = "Please enter your actual age";
     } else {
-        text = "Thank you";
+        text1 = "Thank you";
     }
-    document.getElementById("checkage").innerHTML = text2;
+    document.getElementById("checkage").innerHTML = text1;
 }
 
 function valyear() {
-    var y, text;
+    var y, text2;
 
     // Get the value of the input field with id="futureyear"
    y = document.getElementById("futureyear").value;
 
     // If y is Not a Number or less than one or greater than 120
-    if (isNaN(y) || y < 1 || x > 9999) {
-        text = "not a year";
+    if (isNaN(y) || y < 1 || y > 9999) {
+        text2 = "not a year";
     } else {
-        text = "Thank you year";
+        text2 = "Thank you year";
     }
-    document.getElementById("futureyear").innerHTML = text;
+    document.getElementById("checkyear").innerHTML = text2;
 }
 
 
