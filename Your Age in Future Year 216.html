@@ -20,7 +20,7 @@
 
 <p id="checkyear"></p>
   
-    <!-- from 3schools -->
+    <!-- from 3schools, modified -->
 	
 	<script>
 function valage() {
@@ -46,7 +46,7 @@ function valyear() {
    y = document.getElementById("futureyear").value;
 
     // If y is Not a Number or less than one or greater than 120
-    if (isNaN(y) || y < 1 || y > 9999) {
+    if (isNaN(y) || y < 1000 || y > 9999) {
         text2 = "not a year";
     } else {
         text2 = "Thank you year";
@@ -54,7 +54,21 @@ function valyear() {
     document.getElementById("checkyear").innerHTML = text2;
 }
 
+function futureage() {
+var today = new Date();
+      var currentyear = today.getFullYear();
+      function getFullYear() {return getFullYear();};
 
+      var yeardif=(futureyear-currentyear)
+
+      var futureage=(userage + yeardif)
+
+document.getElementById("futureage").innerHTML = text3;
+	
+   
+
+     
+    }
 
 
 
