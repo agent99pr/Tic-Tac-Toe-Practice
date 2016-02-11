@@ -8,6 +8,7 @@
   <input id="userage">
   
   <button type="button" onclick="valage()">Submit Age</button>
+  
 
 <p id="checkage"></p>
 
@@ -20,9 +21,14 @@
 
 <p id="checkyear"></p>
   
+  
+     
     <!-- from 3schools, modified -->
 	
 	<script>
+	
+	
+	
 function valage() {
     var x, text1;
 
@@ -49,34 +55,28 @@ function valyear() {
     if (isNaN(y) || y < 1000 || y > 9999) {
         text2 = "not a year";
     } else {
-        text2 = "Thank you year";
+        text2 = "thank you";
     }
     document.getElementById("checkyear").innerHTML = text2;
 }
 
-function futureage() {
-var today = new Date();
+ var today = new Date();
       var currentyear = today.getFullYear();
       function getFullYear() {return getFullYear();};
+	  
+	  var futureyear = document.getElementById("futureyear").value;
+	  
+	 var userage = document.getElementById("userage").value;
 
-      var yeardif=(futureyear-currentyear)
+       var yeardif=(futureyear-currentyear);
 
-      var futureage=(userage + yeardif)
+      var futureage=(parseInt(userage) + parseInt(yeardif));
+	  alert(futureage);
 
-document.getElementById("futureage").innerHTML = text3;
-	
-   
+      document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
 
-     
-    }
-
-
-
-
-
+    </script>
 </script>
-
-
 	
   </body>
 </html>
