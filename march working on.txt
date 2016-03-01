@@ -1,0 +1,215 @@
+cut mar1
+
+var futureyear =y;
+alert parseInt("futureyear");
+
+var userage;
+alert(userage);
+
+       var yeardif=parseInt(futureyear)-parseInt(currentyear);
+       alert(yeardif);
+
+      var futureage=parseInt(userage) + parseInt(yeardif);
+	  alert(futureage);
+
+
+cut 
+
+ alert("userage");
+//end
+
+	  var fy = document.getElementById("futureyear").value;
+    alert(fy);
+
+	 var userage = document.getElementById("userage").value;
+       alert(userage);
+*************
+cut:
+  var futureyear = document.getElementById("futureyear").value;
+
+ var userage = document.getElementById("userage").value;
+
+     var yeardif=(futureyear-currentyear);
+
+    var futureage=(parseInt(userage) + parseInt(yeardif));
+  alert(futureage);
+
+    document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
+
+99999999999999999
+
+
+document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
+
+**********not working ((**************
+<html>
+
+<body>
+
+<!-- ask user for their current age -->
+
+<p>How old are you?</p>
+
+<input id="userage">
+
+<button type="button" onclick="valage()">Submit Age</button>
+
+
+<p id="checkage"></p>
+
+
+<!-- ask user for future year -->
+<p>Pick a year</p>
+<input id="futureyear">
+
+<button type="button" onclick="valyear()">Submit Year</button>
+
+<p id="checkyear"></p>
+
+
+</body>
+
+<script>
+
+
+
+function valage() {
+  var x, text1;
+
+  // Get the value of the input field with id="userage"
+
+  x = document.getElementById("userage").value;
+
+  // If x is Not a Number or less than one or greater than 120
+  if (isNaN(x) || x < 1 || x > 120) {
+      text1 = "Please enter your actual age";
+  } else {
+      text1 = "Thank you";
+  }
+  document.getElementById("checkage").innerHTML = text1;
+}
+
+function valyear() {
+  var y, text2;
+
+  // Get the value of the input field with id="futureyear"
+ y = document.getElementById("futureyear").value;
+
+  // If y is Not a Number or less than current year or greater than 120
+  if (isNaN(y) || y < currentyear || y > 9999) {
+      text2 = "Please pick a future year";
+  } else {
+      text2 = "thank you";
+  }
+  document.getElementById("checkyear").innerHTML = text2;
+}
+
+var today = new Date();
+    var currentyear = today.getFullYear();
+    function getFullYear() {return getFullYear();};
+
+
+//copied dupe
+
+var fy="futureyear"
+
+    var yeardif=(fy-currentyear);
+
+    var futureage=(parseInt(userage) + parseInt(yeardif));
+
+
+
+
+    document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
+
+
+  </script>
+
+
+
+</html>
+
+
+********************************** starting feb 29 2016 ***************
+
+<html>
+  <body>
+
+<!-- ask user for their current age -->
+
+  <p>How old are you?</p>
+
+  <input id="userage">
+
+  <button type="button" onclick="valage()">Submit Age</button>
+
+
+<p id="checkage"></p>
+
+
+<!-- ask user for future year -->
+ <p>Pick a year</p>
+<input id="futureyear">
+
+  <button type="button" onclick="valyear()">Submit Year</button>
+
+<p id="checkyear"></p>
+
+
+
+    <!-- from 3schools, modified -->
+
+	<script>
+
+
+
+function valage() {
+    var x, text1;
+
+    // Get the value of the input field with id="userage"
+
+    x = document.getElementById("userage").value;
+
+    // If x is Not a Number or less than one or greater than 120
+    if (isNaN(x) || x < 1 || x > 120) {
+        text1 = "Please enter your actual age";
+    } else {
+        text1 = "Thank you";
+    }
+    document.getElementById("checkage").innerHTML = text1;
+}
+
+function valyear() {
+    var y, text2;
+
+    // Get the value of the input field with id="futureyear"
+   y = document.getElementById("futureyear").value;
+
+    // If y is Not a Number or less than one or greater than 120
+    if (isNaN(y) || y < 1000 || y > 9999) {
+        text2 = "not a year";
+    } else {
+        text2 = "thank you";
+    }
+    document.getElementById("checkyear").innerHTML = text2;
+}
+
+ var today = new Date();
+      var currentyear = today.getFullYear();
+      function getFullYear() {return getFullYear();};
+
+	  var futureyear = document.getElementById("futureyear").value;
+
+	 var userage = document.getElementById("userage").value;
+
+       var yeardif=(futureyear-currentyear);
+
+      var futureage=(parseInt(userage) + parseInt(yeardif));
+	  alert(futureage);
+
+      document.write("<span style=\"color:purple;font-size: 3em; font-family:arial, helvetica, sans-serif;\">(Believe it or not, you will be " + parseInt(futureage) + " years old in "+ parseInt(futureyear) +")<\/span>");
+
+</script>
+
+  </body>
+</html>
